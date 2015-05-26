@@ -99,5 +99,11 @@ class Book
         System.out.println("Title: " + title);
         System.out.println("Author: " + author);
         System.out.println("No. of pages: " + pages);
+                
+        if(refNumber.length()<1) {
+            System.out.println("There is no reference number for this item");
+        } else {
+            System.out.println("Reference Number: " + refNumber);
+        }
     }
 }
