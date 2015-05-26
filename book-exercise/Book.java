@@ -13,6 +13,7 @@ class Book
     private String title;
     private int pages;
     private String refNumber;
+    private int borrowed;
 
     /**
      * Set the author and title fields when this object is constructed.
@@ -23,6 +24,7 @@ class Book
         title = bookTitle;
         pages = bookPages;
         refNumber = "";
+        borrowed = 0;
     }
 
     /**
@@ -59,13 +61,40 @@ class Book
     }
     
     /**
+     * This is an accessor (getter) method to return the value of variable borrowed
+     */
+    public int getBorrowed()
+    {
+        return borrowed;
+    }
+    
+    /**
      * This is the mutator (setter) method to set the variable of the refNumber
      * in order to help a library record book information.
      */
     public void setRefNumber(String refNumber)
     {
-        this.refNumber = refNumber;
+        if(refNumber.length() < 3)
+        {
+            System.out.println("Reference number must be at least 3 characters long");
+        } else {
+            this.refNumber = refNumber;
+        }
     }
+    
+    /**
+     * This ia mutator (setter) method to increase the number of variable borrowed each time 
+     * it is called
+     */
+    public void setBorrowed()
+    {
+        // borrowed += borrowed;
+        // I think this can also be typed as
+        // borrowed++;
+        // or
+        borrowed = borrowed +1;
+    }
+    
     
     /**
      * This method prints the author name to the terminal
@@ -105,5 +134,6 @@ class Book
         } else {
             System.out.println("Reference Number: " + refNumber);
         }
+        System.out.println("Borrowed (no. of times): " + borrowed);
     }
 }
