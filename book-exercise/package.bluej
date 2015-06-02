@@ -1,7 +1,7 @@
 #BlueJ package file
-objectbench.height=100
-objectbench.width=555
-package.editor.height=400
+objectbench.height=76
+objectbench.width=868
+package.editor.height=424
 package.editor.width=760
 package.editor.x=71
 package.editor.y=35
@@ -14,10 +14,10 @@ readme.editor.height=700
 readme.editor.width=900
 readme.editor.x=0
 readme.editor.y=22
-target1.editor.height=962
+target1.editor.height=773
 target1.editor.width=900
-target1.editor.x=971
-target1.editor.y=36
+target1.editor.x=380
+target1.editor.y=23
 target1.height=60
 target1.name=Book
 target1.naviview.expanded=true
