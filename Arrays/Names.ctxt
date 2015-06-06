@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Names()
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Names\n
+comment1.params=
+comment1.target=void\ initArray()
+comment2.params=
+comment2.target=void\ initArrayList()
+comment3.params=
+comment3.target=void\ printArray()
+comment4.params=
+comment4.target=void\ printArrayList()
+numComments=5
