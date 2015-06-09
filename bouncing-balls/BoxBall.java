@@ -40,7 +40,9 @@ public class BoxBall
     private int xPosition;
     private int yPosition;
     private Canvas canvas;
-    // new variable set by Kevin
+    // new variables set by Kevin
+    private int xAxisWidth;
+    private int yAxisHeight;
     private int ySpeed = 1;
     private int xSpeed = 1;
     // variable to understand position - might need to be a method
@@ -55,22 +57,29 @@ public class BoxBall
      * @param yPos  the vertical coordinate of the ball
      * @param ballDiameter  the diameter (in pixels) of the ball
      * @param ballColor  the color of the ball
-     * @param groundPos  the position of the ground (where the wall will bounce)
+     * @param wallPos  the position of the rectangle walls (where the ball will bounce)
      * @param drawingCanvas  the canvas to draw this ball on
      * 
      */
     public BoxBall(int xPos, int yPos, int ballDiameter, Color ballColor,
-                   int xPosition, int yPosition, Canvas drawingCanvas)
+                   int xWidth, int yHeight, Canvas drawingCanvas)
     {
         // initialise instance variables
-        xPosition = xPos;
-        yPosition = yPos;
-        color = ballColor;
-        diameter = ballDiameter;
+        xPosition = xPos; // starting position horizontal axis
+        yPosition = yPos; // starting position vertical axis
+        diameter = ballDiameter; // ball diameter
+        color = ballColor; // ball colour
+        xAxisWidth = xWidth; // width of rectangle
+        yAxisHeight = yHeight; // height of rectangle
         
+        // need to think about how to calculate ball position so it bounces off walls
+        wallPos = (xPosition, yPosition);
         
-        groundPosition = groundPos;
+        // 
         canvas = drawingCanvas;
+      
+        // thinking about where I implement ball speed - am thinking in the move method() below
+        
     }
 
     /**
@@ -99,7 +108,7 @@ public class BoxBall
         erase();
             
         // compute new position
-        ySpeed += GRAVITY;
+        // ySpeed += GRAVITY; // NO GRAVITY IN THE BOX
         yPosition += ySpeed;
         xPosition +=2;
 
