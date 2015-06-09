@@ -1,8 +1,8 @@
 import java.awt.*;
 import java.awt.geom.*;
 import java.util.ArrayList;
-import java.lang.Object;
 import java.util.Random;
+
 
 /**
  * Class BallDemo - provides two short demonstrations showing how to use the 
@@ -129,15 +129,38 @@ public class BallDemo
      */
     public void boxBounce()
     {
+        // create the bouncing ball objects
+
+        int i;  // declare the local variable for the loop
+        
+        int bottom = 400; // set the bottom length for the bottom of the rectangle
+        int rightSide = 400; // set the right side lengthfor the right side of the rectangle
+        int leftSide = 10; // set the left side length for the left side of the rectangle
+        int top = 10; // set the top length for the top of the rectangle
+        
         // there appears to be the class rectangle which you can use to instatiate a rectangle and 
         // then add a bounce method to it with walls that act as a limit to the balls created inside
         
         // the shape to draw and move
-        //int xPos = 10;
-        Rectangle rect = new Rectangle(10, 10, 300, 200);
-        //rect.draw(rectangle);
-        myCanvas.fill(rect);
-    
+        Rectangle rect = new Rectangle(100, 100, 300, 200);
+        myCanvas.draw(rect);
+
+        // create and show the balls
+        BoxBall[] ballArray = new BoxBall[ballNumber]; // declare the ballArrayList
+        for(i = 0;i < ballNumber;i++)
+        {
+            // generating random numbers here
+            Random rand = new Random();
+            int rNumber = rand.nextInt(300);
+            int xAxis = rNumber;
+            int rNumber1 = rand.nextInt(400);
+            int yAxis = rNumber1;
+            int rNumber2 = rand.nextInt(32);
+            int size = rNumber2;
+            ballArray[i] = new BoxBall(int xPos, int yPos, int ballDiameter, Color ballColor,
+                                       int xWidth, int yHeight, Canvas drawingCanvas;)
+            ballArray[i].draw();
+        }
     
     
     
