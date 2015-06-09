@@ -1,14 +1,14 @@
 #BlueJ class context
 comment0.params=
 comment0.target=BallDemo()
-comment0.text=\n\ Create\ a\ BallDemo\ object.\ Creates\ a\ fresh\ canvas\ and\ makes\ it\ visible.\n
+comment0.text=\r\n\ Create\ a\ BallDemo\ object.\ Creates\ a\ fresh\ canvas\ and\ makes\ it\ visible.\r\n
 comment1.params=
 comment1.target=void\ drawDemo()
-comment1.text=\n\ Demonstrate\ some\ of\ the\ drawing\ operations\ that\ are\n\ available\ on\ a\ Canvas\ object.\n
+comment1.text=\r\n\ Demonstrate\ some\ of\ the\ drawing\ operations\ that\ are\r\n\ available\ on\ a\ Canvas\ object.\r\n
 comment2.params=ballNumber
 comment2.target=void\ bounce(int)
-comment2.text=\n\ Simulate\ two\ bouncing\ balls\n
+comment2.text=\r\n\ Simulate\ two\ bouncing\ balls\r\n
 comment3.params=
 comment3.target=void\ boxBounce()
-comment3.text=\n\ class\ boxBounce\ for\ the\ creation\ of\ the\ rectangle\ (the\ 'box')\ and\ one\ or\ more\ balls\n\ inside\ the\ box\n
+comment3.text=\r\n\ class\ boxBounce\ for\ the\ creation\ of\ the\ rectangle\ (the\ 'box')\ and\ one\ or\ more\ balls\r\n\ inside\ the\ box\r\n
 numComments=4
