@@ -87,15 +87,11 @@ public class BallDemo
 
         // draw the ground
         myCanvas.drawLine(50, ground, 550, ground);
-        
-        // generating random numbers here
-        // want to generate 2 random numbers for each new BallArray object
-        
 
-        
         // create and show the balls
         for(i = 0;i < ballNumber;i++)
         {
+            // generating random numbers here
             Random rand = new Random();
             int rNumber = rand.nextInt(300);
             int xAxis = rNumber;
@@ -126,4 +122,29 @@ public class BallDemo
             }
         }
     }
+    
+    /**
+     * class boxBounce for the creation of the rectangle (the 'box') and one or more balls
+     * inside the box
+     */
+    public void boxBounce()
+    {
+        // there appears to be the class rectangle which you can use to instatiate a rectangle and 
+        // then add a bounce method to it with walls that act as a limit to the balls created inside
+        
+        // the shape to draw and move
+        //int xPos = 10;
+        Rectangle rect = new Rectangle(10, 10, 300, 200);
+        //rect.draw(rectangle);
+        myCanvas.fill(rect);
+    
+    
+    
+    
+    
+    
+    
+    }
+    
+    
 }
