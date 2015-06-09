@@ -1,6 +1,8 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.geom.*;
+import java.awt.Shape;
+import java.awt.Rectangle;
 
 /**
  * Class Canvas - a class to allow for simple graphical 
