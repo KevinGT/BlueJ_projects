@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.params=txt
+comment0.target=Test(java.lang.String)
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Test\n
+comment1.params=
+comment1.target=java.lang.String\ getText()
+comment2.params=s
+comment2.target=void\ setText(java.lang.String)
+comment3.params=input
+comment3.target=void\ test(java.lang.String)
+comment4.params=
+comment4.target=java.lang.String\ test2()
+comment5.params=a
+comment5.target=boolean\ compareStrings(java.lang.String)
+numComments=6
