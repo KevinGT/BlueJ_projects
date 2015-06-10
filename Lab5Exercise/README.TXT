@@ -20,7 +20,7 @@ class RandomTester
 
 -Random()
 -ArrayList<String>();
--testing various methods of gainign a random answer through if/else statements and through an array and searching answers through a random index
+-testing various methods of gaining a random answer through if/else statements and through an array and searching answers through a random index
 
 ------------------------------------------------------------------------
 
