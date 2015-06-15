@@ -1,5 +1,7 @@
 import java.awt.*;
 import java.awt.geom.*;
+import java.util.ArrayList;
+import java.util.Random;
 
 /**
  * Class BoxBall - creates a graphical ball that will bounce around inside a box so 
@@ -73,7 +75,6 @@ public class BoxBall
         yAxisHeight = yHeight; // height of rectangle
         
         // need to think about how to calculate ball position so it bounces off walls
-        wallPos = (xPosition, yPosition);
         
         // 
         canvas = drawingCanvas;
@@ -102,6 +103,7 @@ public class BoxBall
     /**
      * Move this ball according to its position and speed and redraw.
      **/
+    /*
     public void move()
     {
         // remove from canvas at the current position
@@ -121,7 +123,7 @@ public class BoxBall
         // draw again at new position
         draw();
     }    
-
+    */
     /**
      * return the horizontal position of this ball
      */
