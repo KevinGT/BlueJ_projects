@@ -1,9 +1,10 @@
 
 /**
- * Write a description of class Test here.
+ * This Test class was written to provide examples of how to use Java API  class library on 
+ * the class String.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Kevin Talbot 
+ * @version 09-06-15
  */
 public class Test
 {
