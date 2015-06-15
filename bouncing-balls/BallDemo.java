@@ -17,6 +17,8 @@ public class BallDemo
     private Canvas myCanvas;
     private BouncingBall[] ballArray;
     private int ballNumber;
+    private int ballDiameter;
+    private Color ballColor;
 
     /**
      * Create a BallDemo object. Creates a fresh canvas and makes it visible.
@@ -92,6 +94,7 @@ public class BallDemo
         for(i = 0;i < ballNumber;i++)
         {
             // generating random numbers here
+            // instead of this I could have created an array of random numbers I guess
             Random rand = new Random();
             int rNumber = rand.nextInt(300);
             int xAxis = rNumber;
@@ -124,7 +127,7 @@ public class BallDemo
     }
     
     /**
-     * class boxBounce for the creation of the rectangle (the 'box') and one or more balls
+     * method boxBounce for the creation of the rectangle (the 'box') and one or more balls
      * inside the box
      */
     public void boxBounce()
@@ -152,13 +155,13 @@ public class BallDemo
             // generating random numbers here
             Random rand = new Random();
             int rNumber = rand.nextInt(300);
-            int xAxis = rNumber;
+            int xPos = rNumber;
             int rNumber1 = rand.nextInt(400);
-            int yAxis = rNumber1;
+            int yPos = rNumber1;
             int rNumber2 = rand.nextInt(32);
             int size = rNumber2;
-            ballArray[i] = new BoxBall(int xPos, int yPos, int ballDiameter, Color ballColor,
-                                       int xWidth, int yHeight, Canvas drawingCanvas;)
+            ballArray[i] = new BoxBall(xPos, yPos, ballDiameter, ballColor,
+                                       drawingCanvas());
             ballArray[i].draw();
         }
     
