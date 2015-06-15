@@ -31,8 +31,13 @@ readme.editor.x=0
 readme.editor.y=23
 target1.editor.height=1000
 target1.editor.width=932
+<<<<<<< HEAD
 target1.editor.x=-985
 target1.editor.y=21
+=======
+target1.editor.x=348
+target1.editor.y=42
+>>>>>>> da78e1d475859e404d5fe7cc662684b81a86cf1a
 target1.height=50
 target1.name=BallDemo
 target1.naviview.expanded=true
