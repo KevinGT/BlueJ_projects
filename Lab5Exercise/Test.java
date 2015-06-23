@@ -1,6 +1,6 @@
 
 /**
- * This Test class was written to provide examples of how to use Java API  class library on 
+ * This Test class was written to provide examples of how to use Java API class library on 
  * the class String.
  * 
  * @author Kevin Talbot 
